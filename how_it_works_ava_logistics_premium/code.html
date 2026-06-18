@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How It Works | AVA Logistics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "outline": "#76777d",
+                    "secondary-fixed": "#d5e3fd",
+                    "on-tertiary-container": "#98805d",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-fixed": "#fcdeb5",
+                    "surface": "#f7f9fb",
+                    "secondary": "#515f74",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#7c839b",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "surface-container": "#eceef0",
+                    "on-surface-variant": "#45464d",
+                    "primary-container": "#131b2e",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#271901",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "inverse-primary": "#bec6e0",
+                    "surface-dim": "#d8dadc",
+                    "surface-tint": "#565e74",
+                    "secondary-container": "#d5e3fd",
+                    "surface-bright": "#f7f9fb",
+                    "primary-fixed-dim": "#bec6e0",
+                    "primary-fixed": "#dae2fd",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "primary": "#000000",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface": "#191c1e",
+                    "on-secondary-container": "#57657b",
+                    "outline-variant": "#c6c6cd",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#e6e8ea",
+                    "tertiary-container": "#271901",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "background": "#f7f9fb",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "section-gap": "120px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Manrope"],
+                    "caption": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "headline-sm": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #131b2e 0%, #000000 100%);
+        }
+        .step-node::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            width: 24px;
+            height: 2px;
+            background-color: #c6c6cd;
+        }
+        .step-card:hover .step-icon {
+            transform: translateY(-4px);
+            color: #98805d;
+        }
+        .gold-border-accent {
+            border-bottom: 4px solid #98805d;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-on-primary">
+                AVA Logistics
+            </div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300" href="#">Global Network</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300" href="#">Track &amp; Trace</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-on-tertiary-container pb-1" href="#">Insights</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300" href="#">Company</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-md uppercase tracking-wider transition-all duration-300 hover:bg-secondary">
+                    Request a Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden luxury-gradient">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="A high-end, cinematic view of a modern logistics terminal at twilight. The scene features sleek cargo planes and organized shipping containers under soft, dramatic lighting with deep navy shadows and golden ambient highlights from the facility. The atmosphere is professional, quiet, and highly efficient, emphasizing global connectivity and precision infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqVgYd1RvYAIc4Q9sf6LyqFmbAjJwpvBChEaJSZMeU25FF7k9UHCyF6LWuk2lsPiQP7eR5S6uVYioJhJxALDcfqE2Zy6pMk9ImwZfGak3o4Z2QIimvz2jAWoaW3uDeiYQmlSOVClT-byGSOhCWRRa5Un8pQe2zjgrbOAp0t3Av_56c9wrbOSYd2bagpJgEmzpgf9C8z2RoEr9Fvdmo60NiQKZNRExjlmxi5FfUUl0qWfiVF8ZgJsoN6LE9ggivJoCE-5193w8fShc"/>
+</div>
+<div class="relative max-w-container-max mx-auto px-margin-desktop z-10">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 bg-on-tertiary-container/20 text-on-tertiary-container font-label-md text-label-md uppercase tracking-widest mb-6">Process &amp; Precision</span>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-6">How We Orchestrate Global Motion</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+                        Precision isn't just a goal; it's our operating standard. Explore the meticulous steps we take to ensure your assets move across the globe with absolute authority.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Logistics Workflow Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16 border-l-[24px] border-on-tertiary-container pl-8">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Logistics Workflow</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Our enterprise logistics pipeline is designed for scalability and transparency, handling high-volume freight with mechanical accuracy.</p>
+</div>
+<div class="relative">
+<!-- Desktop Timeline Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-outline-variant -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-gutter relative">
+<!-- Step 1: Inquiry -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="description">description</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">01</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Inquiry</h3>
+<p class="text-on-surface-variant font-body-md">Requirement analysis and strategic freight modeling tailored to your specific trade lanes.</p>
+</div>
+<!-- Step 2: Receiving -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="inventory_2">inventory_2</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">02</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Receiving</h3>
+<p class="text-on-surface-variant font-body-md">Consignment arrival at our strategic global hubs with immediate digital logging.</p>
+</div>
+<!-- Step 3: Inspection -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="verified">verified</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">03</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Inspection</h3>
+<p class="text-on-surface-variant font-body-md">Rigorous quality control and compliance verification against international standards.</p>
+</div>
+<!-- Step 4: Storage -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="warehouse">warehouse</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">04</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Storage</h3>
+<p class="text-on-surface-variant font-body-md">Climate-controlled, secure warehousing utilizing advanced SKU management systems.</p>
+</div>
+<!-- Step 5: Shipping -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="local_shipping">local_shipping</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">05</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Shipping</h3>
+<p class="text-on-surface-variant font-body-md">Multi-modal dispatch via sea, air, or land with real-time telemetry tracking.</p>
+</div>
+<!-- Step 6: Delivery -->
+<div class="step-card group bg-surface-container-lowest p-8 border border-outline-variant transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:gold-border-accent relative z-10">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary-container step-icon transition-transform" data-icon="check_circle">check_circle</span>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-bold">06</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Delivery</h3>
+<p class="text-on-surface-variant font-body-md">Last-mile fulfillment and final handover with digital proof of delivery.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Personal Shopping Workflow Section -->
+<section class="py-section-gap bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-gutter">
+<div class="border-l-[24px] border-primary pl-8">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Personal Shopping</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">A bespoke procurement service for high-value assets and global luxury sourcing.</p>
+</div>
+<div class="hidden md:block pb-4">
+<div class="flex items-center space-x-2 text-on-tertiary-container font-label-md uppercase tracking-wider">
+<span>Bespoke Concierge</span>
+<span class="w-12 h-[1.5px] bg-on-tertiary-container"></span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-12">
+<!-- Step List with Custom Markers -->
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-on-tertiary-container flex items-center justify-center text-on-tertiary-container font-bold transition-all duration-300 group-hover:bg-on-tertiary-container group-hover:text-white">1</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Request</h4>
+<p class="text-on-surface-variant">Submit your acquisition brief. Whether it's rare machinery or luxury assets, we define the parameters of the search.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-on-tertiary-container flex items-center justify-center text-on-tertiary-container font-bold transition-all duration-300 group-hover:bg-on-tertiary-container group-hover:text-white">2</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Research</h4>
+<p class="text-on-surface-variant">Our global agents identify optimal sources, negotiating pricing and verifying provenance on your behalf.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-on-tertiary-container flex items-center justify-center text-on-tertiary-container font-bold transition-all duration-300 group-hover:bg-on-tertiary-container group-hover:text-white">3</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Purchase &amp; Inspection</h4>
+<p class="text-on-surface-variant">Secure transaction processing followed by a hands-on technical and physical inspection by AVA experts.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-on-tertiary-container flex items-center justify-center text-on-tertiary-container font-bold transition-all duration-300 group-hover:bg-on-tertiary-container group-hover:text-white">4</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Shipping &amp; Global Delivery</h4>
+<p class="text-on-surface-variant">White-glove transit including custom documentation and direct delivery to your specified location.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-white border border-outline-variant p-4 shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="A high-end personal shopping and logistics scene. A white-gloved hand is carefully inspecting a luxury mechanical watch inside a pristine, minimalist studio setting with architectural lighting. The color palette is composed of deep navy, metallic gold accents, and clean white surfaces. The mood conveys extreme attention to detail, luxury concierge services, and professional authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrClSyIe6w_l_AO8nEqkFyF3n4SJTX_dCbSGKnki_Gac3A46s3MaT54gRHE_aKN8gFjwSDPVL1Cx2uwDnUcObSNmQXLWxT2qzakE8m9bC29Mb6QEtu-4-aQcztKFMLWKF1hdewydBJwB7L3JbwzomHCKXVSeZoRumxo0LcdpdP26nIKURs3UQxvaA9U1-EU_NYfAQkFRcJ0MY-hsfnu2ua90gyYe5oX8ZXOqAASGtSczSmf8Q9T1v1IeUPkzjinDq_PtJG6e0qxo"/>
+<div class="absolute -bottom-8 -left-8 bg-primary p-8 text-on-primary max-w-[240px]">
+<div class="text-display-lg font-bold mb-2">100%</div>
+<div class="text-label-md uppercase tracking-widest opacity-80">Inspection Accuracy</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap luxury-gradient relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<!-- Abstract Pattern background simulated with CSS -->
+<div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10">
+<h2 class="font-display-lg text-display-lg text-on-primary mb-8">Ready to Initiate Your Motion?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto">
+                    Contact our strategic planning team today to design a workflow that meets your enterprise demands. Precision starts with a single conversation.
+                </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="bg-on-tertiary-container text-on-primary px-12 py-5 font-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300">
+                        Request a Quote
+                    </button>
+<button class="border-[1.5px] border-on-primary text-on-primary px-12 py-5 font-label-md uppercase tracking-widest hover:bg-white/10 transition-all duration-300">
+                        Speak to an Agent
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-primary-container w-full py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-on-primary mb-6">AVA Logistics</div>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-8">
+                    Defining the future of global motion through precision, authority, and architectural infrastructure.
+                </p>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary dark:text-on-primary">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Global Offices</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Career</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary dark:text-on-primary">Corporate</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Legal Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-on-tertiary-container transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary dark:text-on-primary">Contact</h5>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-2">Headquarters: One World Trade Center</p>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md">New York, NY 10007</p>
+<div class="mt-8 flex space-x-4">
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-on-tertiary-container hover:text-on-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-on-tertiary-container hover:text-on-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant">
+<p class="text-on-surface-variant dark:text-outline-variant text-caption font-caption">© 2024 AVA Logistics. Precision in Motion. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-primary-container rounded-full flex items-center justify-center text-on-tertiary-container shadow-2xl z-50 hover:scale-110 transition-transform group" href="https://wa.me/#">
+<span class="material-symbols-outlined text-[32px]" data-icon="chat" data-weight="fill">chat</span>
+<div class="absolute top-0 right-0 w-4 h-4 bg-on-tertiary-container rounded-full border-2 border-primary-container"></div>
+<div class="absolute right-20 bg-primary-container text-on-primary px-4 py-2 text-label-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+            How can we help?
+        </div>
+</a>
+<script>
+        // Micro-interaction for timeline scroll Reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.step-card').forEach((el, index) => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            el.style.transitionDelay = `${index * 100}ms`;
+            observer.observe(el);
+        });
+    </script>
+</body></html>

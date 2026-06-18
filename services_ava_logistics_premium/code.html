@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | AVA Logistics - Precision in Motion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .luxury-card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            border-bottom: 4px solid #98805d; /* Luxury Gold accent from on-tertiary-container */
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .stat-accent {
+            border-left: 24px solid #98805d;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "outline": "#76777d",
+                        "secondary-fixed": "#d5e3fd",
+                        "on-tertiary-container": "#98805d",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed": "#fcdeb5",
+                        "surface": "#f7f9fb",
+                        "secondary": "#515f74",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#7c839b",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-container": "#eceef0",
+                        "on-surface-variant": "#45464d",
+                        "primary-container": "#131b2e",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#271901",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "inverse-primary": "#bec6e0",
+                        "surface-dim": "#d8dadc",
+                        "surface-tint": "#565e74",
+                        "secondary-container": "#d5e3fd",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed-dim": "#bec6e0",
+                        "primary-fixed": "#dae2fd",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "primary": "#000000",
+                        "surface-container-low": "#f2f4f6",
+                        "on-surface": "#191c1e",
+                        "on-secondary-container": "#57657b",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#000000",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-container": "#271901",
+                        "on-background": "#191c1e",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "background": "#f7f9fb",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Manrope"],
+                        "caption": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-display-lg font-bold text-primary">AVA Logistics</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-on-tertiary-container pb-1 transition-all duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Global Network</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Track &amp; Trace</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Insights</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Company</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface-variant">search</button>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-md uppercase tracking-widest hover:bg-secondary transition-colors duration-300">
+                    Request a Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-section-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A wide-angle cinematic shot of a massive, high-tech logistics distribution center at night with rows of illuminated cargo docks and advanced machinery. The lighting is cool-toned with sharp white highlights and deep navy shadows, reflecting a premium corporate aesthetic. The atmosphere is quiet, organized, and powerful, symbolizing global connectivity and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpaQ3zGTQ8qMzsoxdIbI8qiOr5ZunpDam1utSVLjKn9dcAeyVr1RZ0q32Qval7YAe-GlwFedqhM9OYY8Jdtrx8va8y2kD0gEjeHXn0mggQ00BkWg53BXpd6mCuo14JYiQlhSgh_PThEOi9ItJXEesPo80A1z383eLIZVoCC31Pfck8bXst-6QlHcPZ8IU6I7nhlKEitmy3b0_9L-FZ6vzg1E7BNmGWzREQMEBEFHnhWjYYlKr5smt6O258DpZnpQcYSZ6xaJwcyXc"/>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-20">
+<div class="max-w-2xl text-on-primary">
+<div class="flex items-center gap-4 mb-6">
+<span class="w-12 h-[2px] bg-on-tertiary-container"></span>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-on-tertiary-container">Ecosystem of Excellence</span>
+</div>
+<h1 class="font-display-lg text-display-lg mb-8">Integrated Logistics Solutions for Global Enterprise</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-10 leading-relaxed">
+                    From sovereign-level warehousing to precision supplier sourcing, AVA Logistics provides the architectural backbone for the world's most demanding supply chains.
+                </p>
+<div class="flex gap-4">
+<button class="bg-on-tertiary-container text-on-tertiary px-8 py-4 font-label-md uppercase tracking-widest hover:brightness-110 transition-all">
+                        View Capability Statement
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Statistics Section -->
+<section class="bg-surface-container py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="stat-accent pl-6 py-2">
+<div class="font-display-lg text-display-lg text-primary">450k+</div>
+<div class="font-label-md text-label-md text-outline uppercase tracking-wider">SQM Warehousing</div>
+</div>
+<div class="stat-accent pl-6 py-2">
+<div class="font-display-lg text-display-lg text-primary">124</div>
+<div class="font-label-md text-label-md text-outline uppercase tracking-wider">Global Port Access</div>
+</div>
+<div class="stat-accent pl-6 py-2">
+<div class="font-display-lg text-display-lg text-primary">99.9%</div>
+<div class="font-label-md text-label-md text-outline uppercase tracking-wider">Inventory Accuracy</div>
+</div>
+<div class="stat-accent pl-6 py-2">
+<div class="font-display-lg text-display-lg text-primary">24/7</div>
+<div class="font-label-md text-label-md text-outline uppercase tracking-wider">Real-time Visibility</div>
+</div>
+</div>
+</section>
+<!-- Core Services Grid -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Mastering the Art of Movement</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our service suite is engineered to eliminate friction points in the global trade cycle, providing end-to-end oversight and unmatched reliability.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Warehousing & Storage -->
+<div class="bg-surface-container-lowest border border-outline-variant p-10 luxury-card-hover flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-[48px] text-on-tertiary-container mb-8">warehouse</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Warehousing &amp; Storage</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                            Temperature-controlled, high-security facilities equipped with intelligent WMS. We offer flexible scaling for seasonal demands and long-term strategic storage.
+                        </p>
+</div>
+<a class="inline-flex items-center gap-3 font-label-md text-label-md text-primary uppercase tracking-widest group" href="https://wa.me/?text=Hello%20AVA%20Logistics%2C%20I%20would%20like%20a%20quote%20for%20your%20warehousing%20and%20storage%20services.">
+                        Inquire Now 
+                        <span class="material-symbols-outlined text-[20px] group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Receiving & Inspection -->
+<div class="bg-surface-container-lowest border border-outline-variant p-10 luxury-card-hover flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-[48px] text-on-tertiary-container mb-8">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Receiving &amp; Inspection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                            Rigorous QA protocols at the point of entry. Our technicians ensure every unit meets specification before it enters your inventory stream.
+                        </p>
+</div>
+<a class="inline-flex items-center gap-3 font-label-md text-label-md text-primary uppercase tracking-widest group" href="#">
+                        Learn Protocols
+                        <span class="material-symbols-outlined text-[20px] group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Repacking & Consolidation -->
+<div class="bg-surface-container-lowest border border-outline-variant p-10 luxury-card-hover flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-[48px] text-on-tertiary-container mb-8">package_2</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Repacking &amp; Consolidation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                            Optimizing shipping volume through expert consolidation. We repackage items for maximum safety and minimum freight costs.
+                        </p>
+</div>
+<a class="inline-flex items-center gap-3 font-label-md text-label-md text-primary uppercase tracking-widest group" href="#">
+                        Cost Analysis
+                        <span class="material-symbols-outlined text-[20px] group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Feature Section -->
+<section class="bg-primary py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<img class="w-full h-[600px] object-cover rounded-sm" data-alt="A professional close-up shot of a modern, organized shipping hub with automated conveyor belts and high-end packaging stations. The image features soft, diffused lighting and a clean, high-contrast black and white aesthetic with golden accents. It captures the essence of sophisticated fulfillment services and precision engineering in a corporate logistics environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUcgXcjbpGqFEfZuPJfcLCUjR3njPWXe7hMOdpvVleES9x48C4Fn6c-tThOSFIa-mRkP3zbi8JluxuMjU69qjIQh04OSvACPLk9wgkZsgHelvo95OUxEZf00g4iDqy-eDJqVQdES5_SeETgt7GVqT6LHiv02vUh5-NU7A8kBISlt80c3vBdTjNSmnABXlOQjOvp6b30cokxSR7Ur3d5rrpEls_-V7oeP-0-ds-SW2fZjVpGScJsZ0CxmyvH10qeiGdqF0v56MtGlU"/>
+<div class="absolute -bottom-10 -right-10 bg-on-tertiary-container p-12 hidden lg:block">
+<div class="font-display-lg text-display-lg text-on-tertiary mb-2">98%</div>
+<div class="font-label-md text-label-md text-on-tertiary uppercase tracking-widest">SLA Compliance</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 text-on-primary">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-on-tertiary-container mb-4 block">End-to-End Precision</span>
+<h2 class="font-headline-md text-headline-md mb-8">Fulfillment Services: The Last Mile Perfected</h2>
+<p class="font-body-lg text-body-lg mb-8 text-on-primary/80 leading-relaxed">
+                    Our fulfillment engine is designed for high-velocity brands requiring surgical accuracy. From picking and packing to omnichannel distribution, we handle the complexity so you can focus on growth.
+                </p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<div>
+<span class="font-label-md text-label-md block uppercase mb-1">Omnichannel Integration</span>
+<span class="text-on-primary/60">Sync your storefront directly with our warehouse management system.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<div>
+<span class="font-label-md text-label-md block uppercase mb-1">Branded Unboxing</span>
+<span class="text-on-primary/60">Customized packaging solutions that maintain your brand's premium touch.</span>
+</div>
+</li>
+</ul>
+<button class="border-2 border-on-tertiary-container text-on-tertiary px-10 py-4 font-label-md uppercase tracking-widest hover:bg-on-tertiary-container transition-colors">
+                    Fulfillment Architecture
+                </button>
+</div>
+</div>
+</section>
+<!-- Detailed Services Bento -->
+<section class="py-section-gap bg-surface-container">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[900px]">
+<!-- International Logistics -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-lowest p-10 border border-outline-variant flex flex-col justify-between luxury-card-hover group">
+<div class="flex justify-between items-start mb-10">
+<span class="material-symbols-outlined text-[48px] text-on-tertiary-container">public</span>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-colors" href="https://wa.me/?text=Hello%20AVA%20Logistics%2C%20I%20need%20assistance%20with%20international%20shipping%20and%20logistics.">
+                            WhatsApp Expert
+                        </a>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">International Logistics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Cross-border shipping, customs clearance, and global freight forwarding. We navigate the complexities of international trade so your goods move without delay.
+                        </p>
+</div>
+</div>
+<!-- Supplier Sourcing -->
+<div class="md:col-span-2 md:row-span-1 bg-primary text-on-primary p-10 flex flex-col justify-between luxury-card-hover">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-[48px] text-on-tertiary-container">handshake</span>
+<span class="font-label-md text-label-md uppercase tracking-widest px-4 py-2 border border-on-tertiary-container text-on-tertiary-container">Verified Network</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Supplier Sourcing</h3>
+<p class="font-body-md text-body-md text-on-primary/70 mb-6">
+                            Leverage our deep network of verified manufacturers. We vet quality, reliability, and ethical standards to protect your supply chain integrity.
+                        </p>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-tertiary-container border-b-2 border-on-tertiary-container pb-1 inline-block" href="https://wa.me/?text=Hello%20AVA%20Logistics%2C%20I%20need%20assistance%20sourcing%20products%20from%20verified%20suppliers.">
+                            Source Now
+                        </a>
+</div>
+</div>
+<!-- Personal Shopping -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-lowest p-10 border border-outline-variant flex flex-col justify-between luxury-card-hover">
+<span class="material-symbols-outlined text-[40px] text-on-tertiary-container">shopping_cart</span>
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4">Personal Shopping</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-6">Bespoke procurement services for high-value international acquisitions.</p>
+<a class="text-on-tertiary-container material-symbols-outlined" href="https://wa.me/?text=Hello%20AVA%20Logistics%2C%20I%20would%20like%20help%20purchasing%20products%20internationally.">add_circle</a>
+</div>
+</div>
+<!-- Custom Workflow (Image Component) -->
+<div class="md:col-span-3 md:row-span-1 relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A top-down architectural view of a luxury shipping dock with perfectly aligned pallets and high-end logistical equipment. The color palette is composed of deep blacks, soft grays, and subtle gold accents. The scene is illuminated by crisp, natural light from high warehouse windows, creating a sense of organized efficiency and premium service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtcANciQURCRS-A1BreifjISNZ2KZQVK_LDXS8kF_K3EoppN10Rhm1LbaNebO2ThCuTH-VDoJLsBR4rcnVAgAqPlkVJGeJw8efMtY4kz2dClFd1n37gYV4h91XVAJqwLs_ux9FGxiQ0hervQp7ZqMlIIIeXkdb8cAM6HX1lEnL08TmTtxV48PVA4w9oVX1quRLPdBX2Zx0hRDfU6UWnwrgG5ZJXwdreVFfXxaGHeHtDPNzxOUcBhE6JTlDStXRdqdT8ZfheLlNack"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-10 flex flex-col justify-end text-on-primary">
+<h3 class="font-headline-sm text-headline-sm mb-2">Tailored Flow Architecture</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Every shipment has a fingerprint. We design the route.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Workflow -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-primary mb-20 text-center">The AVA Protocol</h2>
+<div class="relative">
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-outline-variant -translate-y-1/2 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
+<!-- Step 1 -->
+<div class="bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary mb-8 border-4 border-surface shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<h4 class="font-label-md text-label-md uppercase mb-2">Audit</h4>
+<p class="font-caption text-caption text-on-surface-variant max-w-[200px]">Strategic analysis of your current logistics footprint.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary mb-8 border-4 border-surface shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<h4 class="font-label-md text-label-md uppercase mb-2">Architect</h4>
+<p class="font-caption text-caption text-on-surface-variant max-w-[200px]">Engineering a bespoke supply chain model.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-on-tertiary-container flex items-center justify-center text-on-primary mb-8 border-4 border-surface shadow-md animate-pulse">
+<span class="material-symbols-outlined">sync</span>
+</div>
+<h4 class="font-label-md text-label-md uppercase mb-2">Active Integration</h4>
+<p class="font-caption text-caption text-on-surface-variant max-w-[200px]">Live synchronization of systems and hardware.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full border-2 border-outline-variant bg-surface flex items-center justify-center text-outline-variant mb-8 border-4 border-surface shadow-sm">
+<span class="material-symbols-outlined">radio_button_unchecked</span>
+</div>
+<h4 class="font-label-md text-label-md uppercase mb-2">Scale</h4>
+<p class="font-caption text-caption text-on-surface-variant max-w-[200px]">Optimized expansion across global territories.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-2xl z-[100] group" href="https://wa.me/?text=Hello%20AVA%20Logistics%2C%20I%20have%20a%20logistics%20inquiry.">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-on-tertiary-container rounded-full border-2 border-surface"></div>
+<span class="material-symbols-outlined text-on-tertiary-container text-[32px] group-hover:scale-110 transition-transform">chat</span>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary mb-6">AVA Logistics</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 pr-10">
+                    Setting the global standard in precision movement and sovereign-tier logistics infrastructure.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">hub</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">public</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Operational Scope</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Warehousing</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">International Freight</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Digital Fulfillment</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Last Mile</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Corporate</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Global Offices</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Career</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Legal Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Global Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Central Operations: inquiry@ava-logistics.com</p>
+<p class="font-body-md text-body-md text-on-surface-variant">+1 (800) 555-AVA-00</p>
+<button class="mt-6 border border-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                    Contact Us
+                </button>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-10 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">© 2024 AVA Logistics. Precision in Motion.</span>
+<div class="flex gap-8">
+<a class="font-caption text-caption text-on-surface-variant" href="#">Privacy</a>
+<a class="font-caption text-caption text-on-surface-variant" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll interaction for internal links if any
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile Nav micro-interaction (Basic toggle logic)
+        // Note: For a real production app, we'd add a dedicated mobile menu overlay
+    </script>
+</body></html>

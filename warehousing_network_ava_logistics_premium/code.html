@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Warehousing Network | AVA Logistics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "outline": "#76777d",
+                        "secondary-fixed": "#d5e3fd",
+                        "on-tertiary-container": "#98805d",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed": "#fcdeb5",
+                        "surface": "#f7f9fb",
+                        "secondary": "#515f74",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#7c839b",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-container": "#eceef0",
+                        "on-surface-variant": "#45464d",
+                        "primary-container": "#131b2e",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#271901",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "inverse-primary": "#bec6e0",
+                        "surface-dim": "#d8dadc",
+                        "surface-tint": "#565e74",
+                        "secondary-container": "#d5e3fd",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed-dim": "#bec6e0",
+                        "primary-fixed": "#dae2fd",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "primary": "#000000",
+                        "surface-container-low": "#f2f4f6",
+                        "on-surface": "#191c1e",
+                        "on-secondary-container": "#57657b",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#000000",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-container": "#271901",
+                        "on-background": "#191c1e",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "background": "#f7f9fb",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Manrope"],
+                        "caption": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .b2b-shadow {
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+        }
+        .b2b-shadow-hover:hover {
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background-color: rgba(247, 249, 251, 0.9);
+        }
+        .node-active {
+            filter: drop-shadow(0 0 8px #98805d);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<a class="font-display-lg text-display-lg font-bold text-primary" href="#">AVA Logistics</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-on-tertiary-container pb-1 transition-all duration-300" href="#">Global Network</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Track &amp; Trace</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Insights</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Company</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-md uppercase tracking-widest hover:bg-secondary transition-all duration-300">Request a Quote</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section & Interactive Visualization -->
+<section class="relative min-h-[819px] flex flex-col items-center justify-center overflow-hidden py-section-gap">
+<div class="absolute inset-0 z-0">
+
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-tertiary-container mb-4 block">Strategic Distribution</span>
+<h1 class="font-display-lg text-display-lg md:text-[64px] mb-8 max-w-4xl mx-auto leading-tight">A Unified Network Across Five Continents</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">Precision-engineered warehousing solutions strategically located to minimize lead times and maximize operational resilience.</p>
+<!-- Simplified Interactive Map Representation -->
+<div class="relative w-full aspect-video bg-white/50 rounded-xl b2b-shadow p-8 mt-12 overflow-hidden">
+<img alt="World Map Outline" class="w-full h-full object-contain opacity-20 grayscale" data-location="world" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiIw4Wqn3gAezL_VImI7mvftvpfu653uEiPBzJ216sxmhOYdDg5E-j2GaZtSzrR84m_7k6QBwdjl_mB4_omy3Y4PtE9GRbOkE1TZF1ab0aAl1BUiCkqp4WgDjprwJK1V0ZIjIbmxb-A0g-gb04qgNjdrDUUGwdKTnyL0zHWTbPZyyl9jc7CFH--nv6YmFH4qE0IgyAbm6TKp08z4WmchiGEVuULMB5xkkZidSuo2FQpsnpFy-yWaKlSo72rXmHdqsfaPO7zhFLSaQ"/>
+<!-- Pulsing Map Pins (Simulated Interactive Nodes) -->
+<div class="absolute top-[35%] left-[20%] group">
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full relative z-10 cursor-pointer"></div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 hidden group-hover:block bg-primary text-on-primary p-3 rounded shadow-lg whitespace-nowrap">
+<p class="font-label-md">North America Hub</p>
+<p class="text-caption">2.4M sq. ft. Capacity</p>
+</div>
+</div>
+<div class="absolute top-[30%] left-[48%] group">
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full relative z-10 cursor-pointer"></div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 hidden group-hover:block bg-primary text-on-primary p-3 rounded shadow-lg whitespace-nowrap">
+<p class="font-label-md">European Gateway</p>
+<p class="text-caption">Rotterdam / Frankfurt</p>
+</div>
+</div>
+<div class="absolute top-[45%] left-[75%] group">
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full relative z-10 cursor-pointer"></div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 hidden group-hover:block bg-primary text-on-primary p-3 rounded shadow-lg whitespace-nowrap">
+<p class="font-label-md">Asia-Pacific Center</p>
+<p class="text-caption">Singapore / Shanghai</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities Highlights -->
+<section class="bg-surface-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Capability 1 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant b2b-shadow b2b-shadow-hover transition-all duration-300 group">
+<span class="material-symbols-outlined text-[40px] text-on-tertiary-container mb-6 block">security</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Tier-1 Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Biometric access controls, 24/7 internal and external surveillance, and specialized high-value cargo vaults.</p>
+<div class="h-1 w-0 bg-on-tertiary-container transition-all duration-500 group-hover:w-full"></div>
+</div>
+<!-- Capability 2 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant b2b-shadow b2b-shadow-hover transition-all duration-300 group">
+<span class="material-symbols-outlined text-[40px] text-on-tertiary-container mb-6 block">thermostat</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Climate Control</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Precise temperature and humidity management for pharmaceuticals, perishables, and sensitive electronics.</p>
+<div class="h-1 w-0 bg-on-tertiary-container transition-all duration-500 group-hover:w-full"></div>
+</div>
+<!-- Capability 3 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant b2b-shadow b2b-shadow-hover transition-all duration-300 group">
+<span class="material-symbols-outlined text-[40px] text-on-tertiary-container mb-6 block">bolt</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Express Fulfillment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Fully automated sorting and picking systems ensuring same-day dispatch and global express shipping readiness.</p>
+<div class="h-1 w-0 bg-on-tertiary-container transition-all duration-500 group-hover:w-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Coverage Sections (Alternating Bento-style Layouts) -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<header class="mb-16">
+<h2 class="font-headline-md text-headline-md mb-4">Regional Infrastructure</h2>
+<div class="w-24 h-1.5 bg-on-tertiary-container"></div>
+</header>
+<div class="space-y-32">
+<!-- Asia Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 aspect-[16/9] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A clean, futuristic industrial warehouse interior in a modern Asian city like Singapore. The space is filled with high-tech automated robots moving palettes between tall white shelving units. The lighting is crisp and cool-toned with highlights of luxury gold. The floor is polished concrete reflecting the bright, professional environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQUimnONYOLX-XgiUeEvgwEYDXMInQYP6Xjq_56QHof4tDfW5XASCCb-b_27y-XYOYpvzzv0iBH5sClWsmE5812lu0aA1Oqv_yFj48LjkkgEeJslg-1JfQuj6qgCwh61owJNkWYCBYNhRFLHoqNf72wK3TLc1YQcOe7FgJV5jT-SxlqolySL5KWzYMp3za4lqhNsdunXmPGcsfJQ5e2YiXQWIe-B9gyCcHmK4a63KsyCWp3dM_3oGNu-FqO9HWPSUSMBTOvVAYdX0"/>
+</div>
+<div class="lg:col-span-5 pl-0 lg:pl-12">
+<span class="font-label-md text-label-md text-on-tertiary-container uppercase tracking-widest block mb-4">Region 01</span>
+<h3 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Asia Pacific</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Serving the world's fastest-growing markets from strategic nodes in Singapore, Shanghai, and Tokyo. Our APAC network specializes in rapid cross-border e-commerce and high-tech manufacturing logistics.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> 12.5M sq. ft total floor space</li>
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> Bonded warehouse facilities</li>
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> Multi-modal port integration</li>
+</ul>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 font-label-md uppercase tracking-widest hover:bg-secondary transition-all" href="https://wa.me/1234567890">
+<span>Contact for APAC Quote</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Europe Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 pr-0 lg:pr-12">
+<span class="font-label-md text-label-md text-on-tertiary-container uppercase tracking-widest block mb-4">Region 02</span>
+<h3 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Europe</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Centrally positioned to connect the Atlantic with the Eurasian landmass. Our European network leverages high-speed rail and Rhine river connections to ensure carbon-efficient last-mile delivery.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> GDPR compliant data centers</li>
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> Cold-chain excellence (Pharma focus)</li>
+<li class="flex items-center gap-3 font-body-md"><span class="material-symbols-outlined text-primary">check_circle</span> Green logistics certified infrastructure</li>
+</ul>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 font-label-md uppercase tracking-widest hover:bg-secondary transition-all" href="https://wa.me/1234567890">
+<span>Contact for EU Quote</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 aspect-[16/9] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated European logistics center located in a sleek, architectural building with large glass facades. The interior is organized with surgical precision, showcasing clean white floors and metallic structures. The setting is bathed in soft natural daylight, emphasizing a quiet luxury and professional atmosphere. The color palette is minimal with deep navy and soft gray tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2r7un7SGQTD0_OAaRVmwWn5P7zTHe-uk4ZeXOW_qd5DG6YLpKro21d3K5EbBACp5lm3VTom7t_lxjBVTNTmSunPdDHVCvWp7_u9D3WcdiHPm8HB3c-2Rf2fCiutA2fuUnNuft1a6bIBd6ftR122OU-84oy6TS8nxJiGADpJL8Cic-r5k2thdHlwuQhQ47Zrag5D5KRl3igCUUFodpd-4kV-p05B5oltqbq0s9GPdt5jt-Fur2MOaXLaABiKEqZD6yj8Tw6n5GfQ0"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-section-gap bg-primary-container text-on-primary-container">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="flex items-start gap-6">
+<div class="w-1 h-24 bg-on-tertiary-container"></div>
+<div>
+<span class="font-display-lg text-display-lg block mb-2">250+</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-outline">Global Hubs</span>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-1 h-24 bg-on-tertiary-container"></div>
+<div>
+<span class="font-display-lg text-display-lg block mb-2">45M</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-outline">Sq. Ft. Total</span>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-1 h-24 bg-on-tertiary-container"></div>
+<div>
+<span class="font-display-lg text-display-lg block mb-2">99.9%</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-outline">Inventory Accuracy</span>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-1 h-24 bg-on-tertiary-container"></div>
+<div>
+<span class="font-display-lg text-display-lg block mb-2">120+</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-outline">Cities Covered</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Middle East & Africa Micro-Cards -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Middle East -->
+<div class="relative group overflow-hidden h-[400px] flex items-end p-12">
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-all duration-500 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vast logistics terminal in a desert environment, possibly Dubai. The architecture is ultra-modern with sweeping lines. High-end trucks are parked in perfectly aligned bays. The sky is a clear twilight blue with golden horizon lines. The image conveys immense scale and authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJKHCchRRF9N3qnFqXRbY_y6OziZtqmLW6sewhMiP_lBKfI0jaEwD-w6cKhjgns_Unc-6CeLNu6zTjhYU69LcI0jdyMSpLE3XS1L41R8A-61nVVAj6RXFkj0Z4jYSKuXPw1Z3qMA-V6crM2MS1jjStkDv6CN8WEldWVPX0frIE3ZBN6aEvl-rOCHIiysY5lnWYOwqCjF8VssP9QJhroUkOhz7Rdp7AdF2m8mJjyNbG2wL2sx9M8GiUEehoDGBvcHKHKRYaU5V8_4E"/>
+<div class="relative z-20">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Middle East</h3>
+<p class="text-white/80 font-body-md mb-6 max-w-sm">Strategic gateway hubs in Dubai and Riyadh connecting East and West trade lanes.</p>
+<a class="text-white border-b border-on-tertiary-container pb-1 font-label-md tracking-widest hover:text-on-tertiary-container transition-colors" href="https://wa.me/1234567890">REGIONAL ENQUIRY</a>
+</div>
+</div>
+<!-- Africa -->
+<div class="relative group overflow-hidden h-[400px] flex items-end p-12">
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-all duration-500 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A modern, industrial warehouse facility in a developing urban hub in Africa. The scene is professional and orderly, showing local staff operating advanced logistics software on tablets. The lighting is warm and golden, reflecting the vibrant energy and growth of the region." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgLs6zZujUbtPPUGq8QTNkqK--_6nFLDhaDAdVF32T1v_UzcA_USFLD9AUa9lLVtezD4AOJeGAEPxCbsFWUlkaDqqd9CxyyIcPATq7XW3tj0tNRJjrG_97iT9sUGc-Ma0O53VDVP_f5dxAg3vlqmZpfv4BO0bB28OirvRbawFy73xD0t1Ygb2eu8IPlCxCufHqlWzFKyVXI93k3KJ_cMAkQd_3w7VXqmjpE54mT5Hzno0LgUK_3bplOy1vBFlHA3wgN_O0AFv0Yoo"/>
+<div class="relative z-20">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Africa</h3>
+<p class="text-white/80 font-body-md mb-6 max-w-sm">Accelerating infrastructure in Johannesburg, Lagos, and Nairobi for the continent's emerging markets.</p>
+<a class="text-white border-b border-on-tertiary-container pb-1 font-label-md tracking-widest hover:text-on-tertiary-container transition-colors" href="https://wa.me/1234567890">REGIONAL ENQUIRY</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-section-gap relative overflow-hidden bg-primary text-on-primary">
+<div class="absolute inset-0 opacity-10">
+
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 text-center">
+<h2 class="font-display-lg text-display-lg mb-8">Ready to Scale Your Global Operations?</h2>
+<p class="font-body-lg text-body-lg text-outline-variant max-w-2xl mx-auto mb-12">Consult with our regional specialists to design a custom warehousing strategy tailored to your growth trajectory.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-white text-primary px-10 py-5 font-label-md uppercase tracking-widest hover:bg-on-tertiary-container hover:text-white transition-all duration-300">Book Strategy Session</button>
+<a class="flex items-center gap-3 border border-outline-variant px-10 py-5 font-label-md uppercase tracking-widest hover:bg-white/10 transition-all duration-300" href="https://wa.me/1234567890">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        WhatsApp Representative
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-primary-container w-full py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary mb-6">AVA Logistics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Precision in Motion. Global connectivity through superior infrastructure.</p>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Network</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Air Freight</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Ocean Freight</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Warehousing</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Supply Chain</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Global Offices</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Career</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-tertiary-container transition-colors" href="#">Legal Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Contact</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">1200 Logistics Way, London, UK</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">+44 (0) 20 7946 0000</p>
+<p class="font-body-md text-body-md text-on-surface-variant">connect@avalogistics.com</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant">
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 AVA Logistics. Precision in Motion.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Action -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-2xl group z-[60] hover:scale-110 transition-transform" href="https://wa.me/1234567890">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-on-tertiary-container rounded-full border-2 border-surface animate-pulse"></div>
+<div class="absolute right-full mr-4 bg-primary text-on-primary px-4 py-2 rounded text-caption whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+            Chat with Logistics Specialist
+        </div>
+</a>
+<script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
